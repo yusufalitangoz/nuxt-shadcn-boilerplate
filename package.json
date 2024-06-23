@@ -13,10 +13,13 @@
   "dependencies": {
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/seo": "2.0.0-rc.10",
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/motion": "^2.2.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.396.0",
     "nuxt": "^3.12.2",
+    "pinia": "^2.1.7",
     "radix-vue": "^1.8.4",
     "shadcn-nuxt": "^0.10.4",
     "tailwind-merge": "^2.3.0",
@@ -30,6 +33,9 @@
     "@nuxt/eslint": "^0.3.13",
     "@nuxt/icon": "^1.0.0",
     "@nuxtjs/tailwindcss": "^6.12.0",
+    "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
+    "@vueuse/core": "^10.11.0",
+    "@vueuse/nuxt": "^10.11.0",
     "eslint": "^9.5.0",
     "prettier": "^3.3.2",
     "typescript": "^5.5.2"

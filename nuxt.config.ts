@@ -7,6 +7,10 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/icon",
     "@nuxtjs/seo",
+    "@vueuse/nuxt",
+    "@pinia/nuxt",
+    "@pinia-plugin-persistedstate/nuxt",
+    "@vueuse/motion/nuxt",
   ],
   site: {
     url: "https://boilerplate.yali.dev",
