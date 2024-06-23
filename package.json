@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.7.0",
+    "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/seo": "2.0.0-rc.10",
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/motion": "^2.2.3",

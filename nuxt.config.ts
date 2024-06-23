@@ -11,10 +11,16 @@ export default defineNuxtConfig({
     "@pinia/nuxt",
     "@pinia-plugin-persistedstate/nuxt",
     "@vueuse/motion/nuxt",
+    "@nuxtjs/google-fonts",
   ],
   site: {
     url: "https://boilerplate.yali.dev",
     name: "Nuxt + Shadcn Boilerplate",
     description: "A Nuxt boilerplate with Shadcn",
+  },
+  googleFonts: {
+    families: {
+      Roboto: true,
+    },
   },
 });
