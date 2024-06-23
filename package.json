@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.7.0",
+    "@nuxtjs/seo": "2.0.0-rc.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.396.0",
@@ -27,8 +28,8 @@
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.3.13",
-    "@nuxtjs/tailwindcss": "^6.12.0",
     "@nuxt/icon": "^1.0.0",
+    "@nuxtjs/tailwindcss": "^6.12.0",
     "eslint": "^9.5.0",
     "prettier": "^3.3.2",
     "typescript": "^5.5.2"
