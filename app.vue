@@ -12,7 +12,7 @@ const description = computed(() => route.meta.description);
 <template>
   <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
     <Head>
-      <Title>{{ $t(title) }}</Title>
+      <Title v-if="title">{{ $t(title) }}</Title>
       <Meta v-if="description" :content="$t(description)" name="description" />
       <template v-for="link in head.link" :key="link.id">
         <Link
