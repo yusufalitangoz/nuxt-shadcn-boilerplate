@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.7.0",
+    "@nuxtjs/i18n": "^8.3.1",
     "@nuxtjs/seo": "2.0.0-rc.10",
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/motion": "^2.2.3",
@@ -32,8 +33,8 @@
   "devDependencies": {
     "@nuxt/eslint": "^0.3.13",
     "@nuxt/icon": "^1.0.0",
-    "@nuxtjs/tailwindcss": "^6.12.0",
     "@nuxtjs/google-fonts": "^3.2.0",
+    "@nuxtjs/tailwindcss": "^6.12.0",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.0",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",

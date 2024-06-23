@@ -12,15 +12,30 @@ export default defineNuxtConfig({
     "@pinia-plugin-persistedstate/nuxt",
     "@vueuse/motion/nuxt",
     "@nuxtjs/google-fonts",
+    "@nuxtjs/i18n",
   ],
-  site: {
-    url: "https://boilerplate.yali.dev",
-    name: "Nuxt + Shadcn Boilerplate",
-    description: "A Nuxt boilerplate with Shadcn",
-  },
   googleFonts: {
     families: {
       Roboto: true,
     },
+  },
+  i18n: {
+    baseUrl: "https://boilerplate.yali.dev",
+    defaultLocale: "tr",
+    langDir: "locales/",
+    locales: [
+      {
+        code: "tr",
+        name: "Türkçe",
+        iso: "tr-TR",
+        file: "tr.ts",
+      },
+      {
+        code: "en",
+        name: "English",
+        iso: "en-US",
+        file: "en.ts",
+      },
+    ],
   },
 });
