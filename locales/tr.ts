@@ -3,4 +3,9 @@ export default {
     name: "Nuxt + Shadcn Başlangıç Şablonu",
     description: "Shadcn ile bir Nuxt başlangıç şablonu",
   },
+  meta: {
+    home: {
+      title: "Anasayfa",
+    },
+  },
 };
