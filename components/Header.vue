@@ -4,6 +4,8 @@ const links = [
   { name: "linkGroups.0.links.0", href: "/" },
   { name: "linkGroups.0.links.1", href: "/not-exist-page" },
 ];
+const linkClass =
+  "text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors";
 </script>
 
 <template>
@@ -15,7 +17,7 @@ const links = [
         <Logo />
         <ul class="hidden md:flex gap-5">
           <li v-for="{ name, href } in links" :key="name">
-            <NuxtLink :to="localePath(href)">
+            <NuxtLink :to="localePath(href)" :class="linkClass">
               {{ $t(name) }}
             </NuxtLink>
           </li>
@@ -35,7 +37,7 @@ const links = [
               <SheetDescription>
                 <ul class="grid gap-5 mt-10">
                   <li v-for="{ name, href } in links" :key="name">
-                    <NuxtLink :to="localePath(href)">
+                    <NuxtLink :to="localePath(href)" :class="linkClass">
                       {{ $t(name) }}
                     </NuxtLink>
                   </li>
