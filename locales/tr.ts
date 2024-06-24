@@ -13,7 +13,13 @@ export default {
       title: "Anasayfa",
     },
   },
-  header: {
-    links: ["Anasayfa", "Hata Sayfası"],
+  linkGroups: [
+    {
+      title: "Navigasyon",
+      links: ["Anasayfa", "Hata Sayfası"],
+    },
+  ],
+  footer: {
+    description: "Bu bir footer açıklamasıdır",
   },
 };

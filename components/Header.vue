@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const localePath = useLocalePath();
 const links = [
-  { name: "header.links.0", href: "/" },
-  { name: "header.links.1", href: "/not-exist-page" },
+  { name: "linkGroups.0.links.0", href: "/" },
+  { name: "linkGroups.0.links.1", href: "/not-exist-page" },
 ];
 </script>
 

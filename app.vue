@@ -31,7 +31,9 @@ defineOgImageComponent("NuxtSeo");
       <NuxtLoadingIndicator />
       <NuxtRouteAnnouncer />
       <NuxtLayout>
-        <NuxtPage />
+        <main class="min-h-screen">
+          <NuxtPage />
+        </main>
       </NuxtLayout>
     </Body>
   </Html>

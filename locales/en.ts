@@ -13,7 +13,13 @@ export default {
       title: "Home",
     },
   },
-  header: {
-    links: ["Home", "Error Page"],
+  linkGroups: [
+    {
+      title: "Navigation",
+      links: ["Home", "Error Page"],
+    },
+  ],
+  footer: {
+    description: "This is a footer description",
   },
 };
