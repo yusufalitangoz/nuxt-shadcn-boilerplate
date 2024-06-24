@@ -5,16 +5,18 @@ const head = useLocaleHead({
   identifierAttribute: "id",
   addSeoAttributes: true,
 });
-const title = computed(() => route.meta.title);
-const description = computed(() => route.meta.description);
+const title = computed(() => route.meta.title || "nuxtSiteConfig.name");
+const description = computed(
+  () => route.meta.description || "nuxtSiteConfig.description"
+);
 defineOgImageComponent("NuxtSeo");
 </script>
 
 <template>
   <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
     <Head>
-      <Title v-if="title">{{ $t(title) }}</Title>
-      <Meta v-if="description" :content="$t(description)" name="description" />
+      <Title>{{ $t(title) }}</Title>
+      <Meta :content="$t(description)" name="description" />
       <template v-for="link in head.link" :key="link.id">
         <Link
           :id="link.id"
