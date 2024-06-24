@@ -8,6 +8,9 @@ export default {
     dark: "Dark",
     system: "System",
   },
+  errorPage: {
+    button: "Go back to home",
+  },
   meta: {
     home: {
       title: "Home",

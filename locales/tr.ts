@@ -8,6 +8,9 @@ export default {
     dark: "Koyu",
     system: "Sistem",
   },
+  errorPage: {
+    button: "Anasayfaya dön",
+  },
   meta: {
     home: {
       title: "Anasayfa",
