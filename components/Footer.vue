@@ -22,6 +22,7 @@ const socials = [
     href: "https://www.linkedin.com",
   },
 ];
+const localePath = useLocalePath();
 </script>
 
 <template>
@@ -57,7 +58,7 @@ const socials = [
           <li v-for="{ href, name } in links" :key="name">
             <NuxtLink
               class="text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors"
-              :to="href"
+              :to="localePath(href)"
             >
               {{ $t(name) }}
             </NuxtLink>
