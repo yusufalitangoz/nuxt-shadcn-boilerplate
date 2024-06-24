@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxt/eslint",
     "@nuxtjs/tailwindcss",
+    "@nuxtjs/color-mode",
     "shadcn-nuxt",
     "@nuxt/image",
     "@nuxt/icon",
@@ -37,5 +38,8 @@ export default defineNuxtConfig({
         file: "en.ts",
       },
     ],
+  },
+  colorMode: {
+    classSuffix: "",
   },
 });

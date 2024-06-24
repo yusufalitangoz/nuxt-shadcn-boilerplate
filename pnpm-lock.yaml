@@ -68,6 +68,9 @@ importers:
       "@nuxt/icon":
         specifier: ^1.0.0
         version: 1.0.0(magicast@0.3.4)(rollup@4.18.0)(vite@5.3.1(@types/node@20.14.8)(sass@1.77.6)(terser@5.31.1))(vue@3.4.30(typescript@5.5.2))
+      "@nuxtjs/color-mode":
+        specifier: ^3.4.1
+        version: 3.4.1(magicast@0.3.4)(rollup@4.18.0)
       "@nuxtjs/google-fonts":
         specifier: ^3.2.0
         version: 3.2.0(magicast@0.3.4)(rollup@4.18.0)
@@ -1657,6 +1660,12 @@ packages:
     engines: { node: ^14.18.0 || >=16.10.0 }
     peerDependencies:
       vue: ^3.3.4
+
+  "@nuxtjs/color-mode@3.4.1":
+    resolution:
+      {
+        integrity: sha512-vZgJqDstxInGw3RGSWbLoCLXtU1mvh1LLeuEA/X3a++DYA4ifwSbNoiSiOyb9qZHFEwz1Xr99H71sXV4IhOaEg==,
+      }
 
   "@nuxtjs/google-fonts@3.2.0":
     resolution:
@@ -11206,6 +11215,17 @@ snapshots:
       - vls
       - vti
       - vue-tsc
+
+  "@nuxtjs/color-mode@3.4.1(magicast@0.3.4)(rollup@4.18.0)":
+    dependencies:
+      "@nuxt/kit": 3.12.2(magicast@0.3.4)(rollup@4.18.0)
+      pathe: 1.1.2
+      pkg-types: 1.1.1
+      semver: 7.6.2
+    transitivePeerDependencies:
+      - magicast
+      - rollup
+      - supports-color
 
   "@nuxtjs/google-fonts@3.2.0(magicast@0.3.4)(rollup@4.18.0)":
     dependencies:
