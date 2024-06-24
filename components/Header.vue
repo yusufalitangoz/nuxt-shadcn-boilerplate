@@ -5,7 +5,7 @@ const links = [
   { name: "linkGroups.0.links.1", href: "/not-exist-page" },
 ];
 const linkClass =
-  "text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors";
+  "text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors text-sm";
 </script>
 
 <template>
