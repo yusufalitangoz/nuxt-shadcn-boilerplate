@@ -29,7 +29,7 @@ defineOgImageComponent("NuxtSeo");
         <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
       </template>
     </Head>
-    <Body>
+    <Body class="font-[Rubik]">
       <NuxtLoadingIndicator />
       <NuxtRouteAnnouncer />
       <NuxtLayout>
