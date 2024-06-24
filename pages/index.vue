@@ -14,7 +14,7 @@ definePageMeta({
       <p class="text-3xl text-zinc-500 dark:text-zinc-400">
         {{ $t("nuxtSiteConfig.description") }}
       </p>
-      <section class="space-x-3 my-10">
+      <section class="flex flex-wrap justify-center gap-3 my-10">
         <Button as-child>
           <NuxtLink target="_blank" to="https://nuxt.com">
             <Icon name="logos:nuxt-icon" class="mr-2" />
@@ -32,7 +32,7 @@ definePageMeta({
             to="https://github.com/yusufalitangoz/nuxt-shadcn-boilerplate"
             target="_blank"
           >
-            <Icon name="bi:github" class="mr-2" />
+            <Icon name="bi:github" class="mr-2" size="18" />
             GitHub
           </NuxtLink>
         </Button>
