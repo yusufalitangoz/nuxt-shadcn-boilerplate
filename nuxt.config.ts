@@ -18,7 +18,7 @@ export default defineNuxtConfig({
   ],
   googleFonts: {
     families: {
-      Rubik: true,
+      Inter: true,
     },
   },
   i18n: {

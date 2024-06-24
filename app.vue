@@ -7,7 +7,7 @@ const head = useLocaleHead({
 });
 const title = computed(() => route.meta.title || "nuxtSiteConfig.name");
 const description = computed(
-  () => route.meta.description || "nuxtSiteConfig.description",
+  () => route.meta.description || "nuxtSiteConfig.description"
 );
 defineOgImageComponent("NuxtSeo");
 </script>
@@ -29,7 +29,7 @@ defineOgImageComponent("NuxtSeo");
         <Meta :id="meta.id" :property="meta.property" :content="meta.content" />
       </template>
     </Head>
-    <Body class="font-[Rubik]">
+    <Body class="font-[Inter]">
       <NuxtLoadingIndicator />
       <NuxtRouteAnnouncer />
       <NuxtLayout>
