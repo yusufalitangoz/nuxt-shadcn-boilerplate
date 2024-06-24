@@ -1,7 +1,9 @@
 <template>
   <main>
     <Header />
-    <slot />
+    <main class="pt-[65px]">
+      <slot />
+    </main>
     <Footer />
   </main>
 </template>
