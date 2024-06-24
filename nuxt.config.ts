@@ -14,6 +14,7 @@ export default defineNuxtConfig({
     "@vueuse/motion/nuxt",
     "@nuxtjs/google-fonts",
     "@nuxtjs/i18n",
+    "@vueuse/motion/nuxt",
   ],
   googleFonts: {
     families: {
