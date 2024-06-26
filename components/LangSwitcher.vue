@@ -15,19 +15,17 @@ const availableLocales = computed(() => {
           <Icon name="iconoir:language" size="18" />
         </Button>
       </DropdownMenuTrigger>
-      <ClientOnly>
-        <DropdownMenuContent>
-          <DropdownMenuItem
-            v-for="{ code, name } in availableLocales"
-            :key="code"
-            as-child
-          >
-            <NuxtLink :to="switchLocalePath(code)">
-              {{ name }}
-            </NuxtLink>
-          </DropdownMenuItem>
-        </DropdownMenuContent>
-      </ClientOnly>
+      <DropdownMenuContent>
+        <DropdownMenuItem
+          v-for="{ code, name } in availableLocales"
+          :key="code"
+          as-child
+        >
+          <NuxtLink :to="switchLocalePath(code)">
+            {{ name }}
+          </NuxtLink>
+        </DropdownMenuItem>
+      </DropdownMenuContent>
     </DropdownMenu>
   </ClientOnly>
 </template>
