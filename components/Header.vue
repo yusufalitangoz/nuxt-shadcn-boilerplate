@@ -34,8 +34,9 @@ const linkClass =
           </SheetTrigger>
           <SheetContent>
             <SheetHeader>
+              <SheetTitle>Menu</SheetTitle>
               <SheetDescription>
-                <ul class="grid gap-5 mt-10">
+                <ul class="grid gap-5 mt-5">
                   <li v-for="{ name, href } in links" :key="name">
                     <NuxtLink :to="localePath(href)" :class="linkClass">
                       {{ $t(name) }}
