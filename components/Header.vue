@@ -27,7 +27,7 @@ const linkClass =
         <LangSwitcher />
         <ColorModeToggle />
         <Sheet>
-          <SheetTrigger class="block md:hidden">
+          <SheetTrigger class="block md:hidden" as-child>
             <Button variant="outline" size="icon">
               <Icon name="ic:round-menu" size="20" />
             </Button>

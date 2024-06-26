@@ -9,24 +9,24 @@ const icon = new Map([
 </script>
 
 <template>
-  <DropdownMenu>
-    <DropdownMenuTrigger as-child>
-      <Button size="icon" variant="outline">
-        <ClientOnly>
+  <ClientOnly>
+    <DropdownMenu>
+      <DropdownMenuTrigger as-child>
+        <Button size="icon" variant="outline">
           <Icon :name="icon.get(colorMode.preference)!" size="18" />
-        </ClientOnly>
-      </Button>
-    </DropdownMenuTrigger>
-    <DropdownMenuContent>
-      <DropdownMenuItem @click="colorMode.preference = 'light'">
-        {{ $t("colorMode.light") }}
-      </DropdownMenuItem>
-      <DropdownMenuItem @click="colorMode.preference = 'dark'">
-        {{ $t("colorMode.dark") }}
-      </DropdownMenuItem>
-      <DropdownMenuItem @click="colorMode.preference = 'system'">
-        {{ $t("colorMode.system") }}
-      </DropdownMenuItem>
-    </DropdownMenuContent>
-  </DropdownMenu>
+        </Button>
+      </DropdownMenuTrigger>
+      <DropdownMenuContent>
+        <DropdownMenuItem @click="colorMode.preference = 'light'">
+          {{ $t("colorMode.light") }}
+        </DropdownMenuItem>
+        <DropdownMenuItem @click="colorMode.preference = 'dark'">
+          {{ $t("colorMode.dark") }}
+        </DropdownMenuItem>
+        <DropdownMenuItem @click="colorMode.preference = 'system'">
+          {{ $t("colorMode.system") }}
+        </DropdownMenuItem>
+      </DropdownMenuContent>
+    </DropdownMenu>
+  </ClientOnly>
 </template>
