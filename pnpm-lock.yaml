@@ -73,8 +73,8 @@ importers:
         specifier: ^3.2.0
         version: 3.2.0(magicast@0.3.4)(rollup@4.18.1)
       '@nuxtjs/tailwindcss':
-        specifier: ^6.12.0
-        version: 6.12.0(magicast@0.3.4)(rollup@4.18.1)
+        specifier: ^6.12.1
+        version: 6.12.1(magicast@0.3.4)(rollup@4.18.1)
       '@pinia-plugin-persistedstate/nuxt':
         specifier: ^1.2.1
         version: 1.2.1(@pinia/nuxt@0.5.1(magicast@0.3.4)(rollup@4.18.1)(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)))(magicast@0.3.4)(pinia@2.1.7(typescript@5.5.3)(vue@3.4.31(typescript@5.5.3)))(rollup@4.18.1)
@@ -1162,8 +1162,8 @@ packages:
     resolution: {integrity: sha512-O5Vk9iSz35Paqq58SDHM2J5Ezc+6rCj3GSVyi8UZ0bpzh/wDW7ytz1vq/niTjpz9RYqzMAfVTZ7xrwY9/ohZsg==}
     engines: {node: '>=18.0.0'}
 
-  '@nuxtjs/tailwindcss@6.12.0':
-    resolution: {integrity: sha512-vXvEq8z177TQcx0tc10mw3O6T9WeN0iTL8hIKGDfidmr+HKReexJU01aPgHefFrCu4LJB70egYFYnywzB9lMyQ==}
+  '@nuxtjs/tailwindcss@6.12.1':
+    resolution: {integrity: sha512-UKmaPRVpxlFqLorhL6neEba2tySlsj6w6yDb7jzS6A0AAjyBQ6k3BQqWO+AaTy2iQLX7eR+1yj3/w43HzY8RtA==}
 
   '@oxc-parser/wasm@0.1.0':
     resolution: {integrity: sha512-oA7XhTbg9rRBJhIzxCNhJwYmON/9LFAH4GBQxl7HWmGSS6HTrb2t6Peq82nxY0W7knguH52neh9T7zs27FVvsQ==}
@@ -6993,7 +6993,7 @@ snapshots:
       - vue
       - webpack
 
-  '@nuxtjs/tailwindcss@6.12.0(magicast@0.3.4)(rollup@4.18.1)':
+  '@nuxtjs/tailwindcss@6.12.1(magicast@0.3.4)(rollup@4.18.1)':
     dependencies:
       '@nuxt/kit': 3.12.3(magicast@0.3.4)(rollup@4.18.1)
       autoprefixer: 10.4.19(postcss@8.4.39)
@@ -7754,8 +7754,8 @@ snapshots:
     dependencies:
       '@mapbox/node-pre-gyp': 1.0.11(encoding@0.1.13)
       '@rollup/pluginutils': 4.2.1
-      acorn: 8.12.0
-      acorn-import-attributes: 1.9.5(acorn@8.12.0)
+      acorn: 8.12.1
+      acorn-import-attributes: 1.9.5(acorn@8.12.1)
       async-sema: 3.1.1
       bindings: 1.5.0
       estree-walker: 2.0.2
@@ -8059,10 +8059,6 @@ snapshots:
     dependencies:
       mime-types: 2.1.35
       negotiator: 0.6.3
-
-  acorn-import-attributes@1.9.5(acorn@8.12.0):
-    dependencies:
-      acorn: 8.12.0
 
   acorn-import-attributes@1.9.5(acorn@8.12.1):
     dependencies:
@@ -11807,7 +11803,7 @@ snapshots:
   terser@5.31.1:
     dependencies:
       '@jridgewell/source-map': 0.3.6
-      acorn: 8.12.0
+      acorn: 8.12.1
       commander: 2.20.3
       source-map-support: 0.5.21
 
