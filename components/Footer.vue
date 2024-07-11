@@ -27,7 +27,7 @@ const localePath = useLocalePath();
 
 <template>
   <footer class="bg-zinc-100 dark:bg-black border-t-[1px] w-full text-sm">
-    <section class="container p-10 grid md:grid-cols-2 gap-10">
+    <section class="container py-10 grid md:grid-cols-2 gap-10">
       <section class="grid place-items-start gap-3">
         <Logo />
         <p class="text-zinc-500 dark:text-zinc-400">
