@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { navigationMenuTriggerStyle } from "./ui/navigation-menu";
+
 const linkGroups = [
   {
     title: "linkGroups.0.title",
@@ -26,7 +28,7 @@ const localePath = useLocalePath();
 </script>
 
 <template>
-  <footer class="bg-zinc-100 dark:bg-black border-t-[1px] w-full text-sm">
+  <footer class="border-t w-full text-sm">
     <section class="container py-10 grid md:grid-cols-2 gap-10">
       <section class="grid place-items-start gap-3">
         <Logo />
@@ -49,21 +51,25 @@ const localePath = useLocalePath();
         </section>
       </section>
       <section class="flex flex-wrap gap-10 md:justify-end">
-        <ul
+        <section
           v-for="{ title, links } in linkGroups"
           :key="title"
           class="space-y-3"
         >
           <h1 class="font-semibold">{{ $t(title) }}</h1>
-          <li v-for="{ href, name } in links" :key="name">
-            <NuxtLink
-              class="text-zinc-500 dark:text-zinc-400 hover:text-black dark:hover:text-white transition-colors"
-              :to="localePath(href)"
-            >
-              {{ $t(name) }}
-            </NuxtLink>
-          </li>
-        </ul>
+          <NavigationMenu>
+            <NavigationMenuList class="grid -ml-4">
+              <NavigationMenuItem v-for="{ name, href } in links" :key="href">
+                <NuxtLink
+                  :class="navigationMenuTriggerStyle()"
+                  :href="localePath(href)"
+                >
+                  {{ $t(name) }}
+                </NuxtLink>
+              </NavigationMenuItem>
+            </NavigationMenuList>
+          </NavigationMenu>
+        </section>
       </section>
     </section>
   </footer>
