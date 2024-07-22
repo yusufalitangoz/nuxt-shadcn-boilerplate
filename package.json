@@ -13,7 +13,7 @@
   "dependencies": {
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/i18n": "^8.3.1",
-    "@nuxtjs/seo": "2.0.0-rc.15",
+    "@nuxtjs/seo": "2.0.0-rc.16",
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/motion": "^2.2.3",
     "class-variance-authority": "^0.7.0",
