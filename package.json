@@ -18,7 +18,7 @@
     "@vueuse/motion": "^2.2.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "lucide-vue-next": "^0.412.0",
+    "lucide-vue-next": "^0.414.0",
     "nuxt": "^3.12.4",
     "pinia": "^2.1.7",
     "radix-vue": "^1.9.2",
