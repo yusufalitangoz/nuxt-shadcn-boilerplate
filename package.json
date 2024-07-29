@@ -20,7 +20,7 @@
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.417.0",
     "nuxt": "^3.12.4",
-    "pinia": "^2.1.7",
+    "pinia": "^2.2.0",
     "radix-vue": "^1.9.2",
     "shadcn-nuxt": "^0.10.4",
     "tailwind-merge": "^2.4.0",
