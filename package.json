@@ -38,7 +38,7 @@
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
     "@vueuse/core": "^10.11.0",
     "@vueuse/nuxt": "^10.11.0",
-    "eslint": "^9.7.0",
+    "eslint": "^9.8.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4"
   }
