@@ -14,7 +14,7 @@
     "@nuxt/image": "^1.7.0",
     "@nuxtjs/i18n": "^8.3.3",
     "@nuxtjs/seo": "2.0.0-rc.16",
-    "@pinia/nuxt": "^0.5.1",
+    "@pinia/nuxt": "^0.5.2",
     "@vueuse/motion": "^2.2.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
