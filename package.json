@@ -36,7 +36,7 @@
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
-    "@vueuse/core": "^10.11.1",
+    "@vueuse/core": "^11.0.0",
     "@vueuse/nuxt": "^10.11.1",
     "@zadigetvoltaire/nuxt-well-known": "^0.0.13",
     "eslint": "^9.9.0",
