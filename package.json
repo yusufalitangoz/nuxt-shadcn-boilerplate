@@ -11,7 +11,7 @@
     "lint:fix": "eslint . --fix && prettier --write --list-different ."
   },
   "dependencies": {
-    "@nuxt/image": "^1.7.0",
+    "@nuxt/image": "^1.8.0",
     "@nuxtjs/i18n": "^8.5.1",
     "@nuxtjs/seo": "2.0.0-rc.19",
     "@pinia/nuxt": "^0.5.3",
