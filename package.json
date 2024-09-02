@@ -21,7 +21,7 @@
     "lucide-vue-next": "^0.438.0",
     "nuxt": "^3.13.0",
     "pinia": "^2.2.2",
-    "radix-vue": "^1.9.3",
+    "radix-vue": "^1.9.5",
     "shadcn-nuxt": "^0.10.4",
     "tailwind-merge": "^2.5.2",
     "tailwindcss-animate": "^1.0.7",

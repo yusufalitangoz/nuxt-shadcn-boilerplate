@@ -39,8 +39,8 @@ importers:
         specifier: ^2.2.2
         version: 2.2.2(typescript@5.5.4)(vue@3.4.38(typescript@5.5.4))
       radix-vue:
-        specifier: ^1.9.3
-        version: 1.9.3(vue@3.4.38(typescript@5.5.4))
+        specifier: ^1.9.5
+        version: 1.9.5(vue@3.4.38(typescript@5.5.4))
       shadcn-nuxt:
         specifier: ^0.10.4
         version: 0.10.4(magicast@0.3.4)(rollup@4.18.1)
@@ -4256,8 +4256,8 @@ packages:
   queue@6.0.2:
     resolution: {integrity: sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==}
 
-  radix-vue@1.9.3:
-    resolution: {integrity: sha512-9pewcgzghM+B+FO1h9mMsZa/csVH6hElpN1sqmG4/qoeieiDG0i4nhMjS7p2UOz11EEdVm7eLandHSPyx7hYhg==}
+  radix-vue@1.9.5:
+    resolution: {integrity: sha512-vtCq+WDAZj5BQtJiChGf/oC7w3y7jaod3agcntgph7fD6aqdcghLZYcUWdgT/XNJs2bEsk+3cjK3ONPRNeFcuQ==}
     peerDependencies:
       vue: '>= 3.2.0'
 
@@ -10298,7 +10298,7 @@ snapshots:
     dependencies:
       inherits: 2.0.4
 
-  radix-vue@1.9.3(vue@3.4.38(typescript@5.5.4)):
+  radix-vue@1.9.5(vue@3.4.38(typescript@5.5.4)):
     dependencies:
       '@floating-ui/dom': 1.6.7
       '@floating-ui/vue': 1.1.1(vue@3.4.38(typescript@5.5.4))
@@ -10306,7 +10306,7 @@ snapshots:
       '@internationalized/number': 3.5.3
       '@tanstack/vue-virtual': 3.8.1(vue@3.4.38(typescript@5.5.4))
       '@vueuse/core': 10.11.1(vue@3.4.38(typescript@5.5.4))
-      '@vueuse/shared': 10.11.0(vue@3.4.38(typescript@5.5.4))
+      '@vueuse/shared': 10.11.1(vue@3.4.38(typescript@5.5.4))
       aria-hidden: 1.2.4
       defu: 6.1.4
       fast-deep-equal: 3.1.3
