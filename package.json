@@ -39,7 +39,7 @@
     "@vueuse/core": "^11.0.0",
     "@vueuse/nuxt": "^11.0.3",
     "@zadigetvoltaire/nuxt-well-known": "^0.0.13",
-    "eslint": "^9.9.1",
+    "eslint": "^9.10.0",
     "prettier": "^3.3.3",
     "typescript": "^5.5.4"
   }
