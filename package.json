@@ -15,7 +15,7 @@
     "@nuxtjs/i18n": "^8.5.1",
     "@nuxtjs/seo": "2.0.0-rc.19",
     "@pinia/nuxt": "^0.5.3",
-    "@vueuse/motion": "^2.2.3",
+    "@vueuse/motion": "^2.2.5",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "lucide-vue-next": "^0.438.0",
