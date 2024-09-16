@@ -32,7 +32,7 @@
   "devDependencies": {
     "@nuxt/eslint": "^0.5.6",
     "@nuxt/icon": "^1.5.1",
-    "@nuxtjs/color-mode": "^3.4.4",
+    "@nuxtjs/color-mode": "^3.5.1",
     "@nuxtjs/google-fonts": "^3.2.0",
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
