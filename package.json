@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "@nuxt/image": "^1.8.0",
-    "@nuxtjs/i18n": "^8.5.1",
+    "@nuxtjs/i18n": "^8.5.5",
     "@nuxtjs/seo": "2.0.0-rc.21",
     "@pinia/nuxt": "^0.5.3",
     "@vueuse/motion": "^2.2.5",
