@@ -39,8 +39,8 @@ importers:
         specifier: ^2.2.2
         version: 2.2.2(typescript@5.6.2)(vue@3.5.6(typescript@5.6.2))
       radix-vue:
-        specifier: ^1.9.5
-        version: 1.9.5(vue@3.5.6(typescript@5.6.2))
+        specifier: ^1.9.6
+        version: 1.9.6(vue@3.5.6(typescript@5.6.2))
       shadcn-nuxt:
         specifier: ^0.10.4
         version: 0.10.4(magicast@0.3.4)(rollup@4.21.0)(webpack-sources@3.2.3)
@@ -4281,8 +4281,8 @@ packages:
   queue@6.0.2:
     resolution: {integrity: sha512-iHZWu+q3IdFZFX36ro/lKBkSvfkztY5Y7HMiPlOUjhupPcG2JMfst2KKEpu5XndviX/3UhFbRngUPNKtgvtZiA==}
 
-  radix-vue@1.9.5:
-    resolution: {integrity: sha512-vtCq+WDAZj5BQtJiChGf/oC7w3y7jaod3agcntgph7fD6aqdcghLZYcUWdgT/XNJs2bEsk+3cjK3ONPRNeFcuQ==}
+  radix-vue@1.9.6:
+    resolution: {integrity: sha512-legrn9jHbEpbJS4QYrA0VmIafj1bmc4MSVzN55WZatGiXMJg3oFrQL5QxpiURJciS+OlATbKA2KAGkMuuLA0LA==}
     peerDependencies:
       vue: '>= 3.2.0'
 
@@ -10626,7 +10626,7 @@ snapshots:
     dependencies:
       inherits: 2.0.4
 
-  radix-vue@1.9.5(vue@3.5.6(typescript@5.6.2)):
+  radix-vue@1.9.6(vue@3.5.6(typescript@5.6.2)):
     dependencies:
       '@floating-ui/dom': 1.6.7
       '@floating-ui/vue': 1.1.1(vue@3.5.6(typescript@5.6.2))
