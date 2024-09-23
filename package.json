@@ -37,7 +37,7 @@
     "@nuxtjs/tailwindcss": "^6.12.1",
     "@pinia-plugin-persistedstate/nuxt": "^1.2.1",
     "@vueuse/core": "^11.0.0",
-    "@vueuse/nuxt": "^11.0.3",
+    "@vueuse/nuxt": "^11.1.0",
     "@zadigetvoltaire/nuxt-well-known": "^0.0.13",
     "eslint": "^9.10.0",
     "prettier": "^3.3.3",
