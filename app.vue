@@ -1,28 +1,31 @@
 <script setup lang="ts">
-const route = useRoute();
 const head = useLocaleHead({
-  addDirAttribute: true,
   identifierAttribute: "id",
   addSeoAttributes: true,
+  addDirAttribute: true,
 });
-const title = computed(() => route.meta.title || "nuxtSiteConfig.name");
-const description = computed(
-  () => route.meta.description || "nuxtSiteConfig.description",
+const route = useRoute();
+const { t } = useI18n();
+const title = computed(() =>
+  t((route.meta.title as string) ?? "nuxtSiteConfig.name"),
 );
-defineOgImageComponent("NuxtSeo");
+const description = computed(() =>
+  t((route.meta.description as string) ?? "nuxtSiteConfig.description"),
+);
+defineOgImageComponent("Nuxt");
 </script>
 
 <template>
   <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
     <Head>
-      <Title>{{ $t(title) }}</Title>
-      <Meta :content="$t(description)" name="description" />
+      <Title>{{ title }}</Title>
+      <Meta :content="description" name="description" />
       <template v-for="link in head.link" :key="link.id">
         <Link
           :id="link.id"
-          :rel="link.rel"
-          :href="link.href"
           :hreflang="link.hreflang"
+          :href="link.href"
+          :rel="link.rel"
         />
       </template>
       <template v-for="meta in head.meta" :key="meta.id">
@@ -33,9 +36,7 @@ defineOgImageComponent("NuxtSeo");
       <NuxtLoadingIndicator />
       <NuxtRouteAnnouncer />
       <NuxtLayout>
-        <main class="min-h-screen">
-          <NuxtPage />
-        </main>
+        <NuxtPage class="min-h-screen" />
       </NuxtLayout>
     </Body>
   </Html>

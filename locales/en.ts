@@ -3,18 +3,18 @@ export default {
     name: "Nuxt + Shadcn Boilerplate",
     description: "A Nuxt boilerplate with Shadcn",
   },
-  colorMode: {
-    light: "Light",
-    dark: "Dark",
-    system: "System",
-  },
-  errorPage: {
-    button: "Go back to home",
-  },
   meta: {
     home: {
       title: "Home",
     },
+  },
+  errorPage: {
+    button: "Go back to home",
+  },
+  colorMode: {
+    light: "Light",
+    dark: "Dark",
+    system: "System",
   },
   linkGroups: [
     {

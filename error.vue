@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { NuxtError } from "#app";
-defineProps({
-  error: Object as () => NuxtError,
-});
+
+defineProps<{ error: NuxtError }>();
+
 const localePath = useLocalePath();
 </script>
 

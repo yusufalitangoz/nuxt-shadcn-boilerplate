@@ -3,23 +3,23 @@ export default {
     name: "Nuxt + Shadcn Başlangıç Şablonu",
     description: "Shadcn ile bir Nuxt başlangıç şablonu",
   },
+  meta: {
+    home: {
+      title: "Ana Sayfa",
+    },
+  },
+  errorPage: {
+    button: "Ana sayfaya dön",
+  },
   colorMode: {
     light: "Açık",
     dark: "Koyu",
     system: "Sistem",
   },
-  errorPage: {
-    button: "Anasayfaya dön",
-  },
-  meta: {
-    home: {
-      title: "Anasayfa",
-    },
-  },
   linkGroups: [
     {
       title: "Navigasyon",
-      links: ["Anasayfa", "Hata Sayfası"],
+      links: ["Ana Sayfa", "Hata Sayfası"],
     },
   ],
   footer: {
