@@ -62,20 +62,14 @@ const footerSocials = computed<Link[]>(() =>
     to: localePath(link.to),
   })),
 );
-
-const colorModeIcons = new Map<string, string>([
-  ["system", "eva:monitor-outline"],
-  ["dark", "akar-icons:moon"],
-  ["light", "ph:sun"],
-]);
 </script>
 
 <template>
   <section>
     <Header :links="headerLinks">
       <HeaderLangSwitcher :available-locales="availableLocales" />
-      <HeaderColorModeToggle
-        :icon="colorModeIcons.get(colorMode.preference)!"
+      <HeaderColorModeSwitcher
+        :color-mode="colorMode.preference"
         @update:color-mode="colorMode.preference = $event"
       />
     </Header>
