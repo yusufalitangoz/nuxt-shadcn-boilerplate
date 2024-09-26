@@ -1,39 +1,19 @@
 const baseUrl = process.env.BASE_URL;
 
 export default defineNuxtConfig({
-  devtools: { enabled: false },
   modules: [
-    "@nuxt/eslint",
+    "@zadigetvoltaire/nuxt-well-known",
+    "@nuxtjs/google-fonts",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
+    "@nuxt/eslint",
+    "@nuxtjs/i18n",
+    "@vueuse/nuxt",
     "shadcn-nuxt",
     "@nuxt/image",
-    "@nuxt/icon",
     "@nuxtjs/seo",
-    "@vueuse/nuxt",
-    "@pinia/nuxt",
-    "@pinia-plugin-persistedstate/nuxt",
-    "@vueuse/motion/nuxt",
-    "@nuxtjs/google-fonts",
-    "@nuxtjs/i18n",
-    "@zadigetvoltaire/nuxt-well-known",
+    "@nuxt/icon",
   ],
-  compatibilityDate: "2024-08-01",
-  wellKnown: {
-    devtools: false,
-    securityTxt: {
-      disabled: false,
-      contacts: ["mailto:you@domain.com"],
-      expires: new Date("2025-08-01"),
-      preferredLanguages: ["tr", "en"],
-      canonical: [`${baseUrl}/.well-known/security.txt`],
-    },
-  },
-  googleFonts: {
-    families: {
-      Inter: true,
-    },
-  },
   i18n: {
     baseUrl,
     defaultLocale: "tr",
@@ -53,7 +33,32 @@ export default defineNuxtConfig({
       },
     ],
   },
+  wellKnown: {
+    devtools: true,
+    securityTxt: {
+      canonical: [`${baseUrl}/.well-known/security.txt`],
+      contacts: ["mailto:you@domain.com"],
+      preferredLanguages: ["tr", "en"],
+      expires: new Date("2025-09-25"),
+      disabled: false,
+    },
+  },
+  googleFonts: {
+    families: {
+      Inter: true,
+    },
+  },
+  imports: {
+    dirs: ["types"],
+  },
+  typescript: {
+    typeCheck: true,
+  },
   colorMode: {
     classSuffix: "",
   },
+  devtools: {
+    enabled: true,
+  },
+  compatibilityDate: "2024-09-25",
 });
