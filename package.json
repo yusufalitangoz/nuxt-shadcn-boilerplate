@@ -23,7 +23,7 @@
     "radix-vue": "^1.9.6",
     "nuxt": "^3.13.2",
     "clsx": "^2.1.1",
-    "vue": "^3.5.8"
+    "vue": "^3.5.10"
   },
   "devDependencies": {
     "@zadigetvoltaire/nuxt-well-known": "^0.0.13",
