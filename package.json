@@ -18,7 +18,7 @@
     "tailwind-merge": "^2.5.3",
     "@nuxtjs/i18n": "^8.5.5",
     "shadcn-nuxt": "^0.10.4",
-    "@nuxt/image": "^1.8.0",
+    "@nuxt/image": "^1.8.1",
     "vue-router": "^4.4.5",
     "radix-vue": "^1.9.6",
     "nuxt": "^3.13.2",
