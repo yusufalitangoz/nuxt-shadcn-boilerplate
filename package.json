@@ -13,7 +13,7 @@
   "dependencies": {
     "class-variance-authority": "^0.7.0",
     "tailwindcss-animate": "^1.0.7",
-    "lucide-vue-next": "^0.446.0",
+    "lucide-vue-next": "^0.447.0",
     "@nuxtjs/seo": "2.0.0-rc.23",
     "tailwind-merge": "^2.5.3",
     "@nuxtjs/i18n": "^8.5.5",
