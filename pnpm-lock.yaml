@@ -52,8 +52,8 @@ importers:
         specifier: ^0.5.7
         version: 0.5.7(eslint@9.12.0(jiti@1.21.6))(magicast@0.3.5)(rollup@4.22.4)(typescript@5.6.2)(vite@5.4.8(@types/node@22.7.1)(sass@1.77.6)(terser@5.33.0))(webpack-sources@3.2.3)
       '@nuxt/icon':
-        specifier: ^1.5.2
-        version: 1.5.2(magicast@0.3.5)(rollup@4.22.4)(vite@5.4.8(@types/node@22.7.1)(sass@1.77.6)(terser@5.33.0))(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3)
+        specifier: ^1.5.4
+        version: 1.5.4(magicast@0.3.5)(rollup@4.22.4)(vite@5.4.8(@types/node@22.7.1)(sass@1.77.6)(terser@5.33.0))(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3)
       '@nuxtjs/color-mode':
         specifier: ^3.5.1
         version: 3.5.1(magicast@0.3.5)(rollup@4.22.4)(webpack-sources@3.2.3)
@@ -978,8 +978,8 @@ packages:
       vite-plugin-eslint2:
         optional: true
 
-  '@nuxt/icon@1.5.2':
-    resolution: {integrity: sha512-VjtYIMo+d+jrBASHhh3eLZgfRAYhZI/E5z7DMlgjSRmUBYtMv/Qz86dSZdYEWM2rdHzzXtFurQRandIHC71fBQ==}
+  '@nuxt/icon@1.5.4':
+    resolution: {integrity: sha512-GHyfvouaVCsNYMZ6FQp1FWU7Mm6GnQ7bbOOtl6uQ6uCTFV+TgyQbahuWyIUOrOuio+gmU9EuaHwW5MEBov8cWw==}
 
   '@nuxt/image@1.8.0':
     resolution: {integrity: sha512-GBbORch+ZfWJ0KB8PaXABsPjaiEXB4B4plcpAUVNCdzKZi2qQ4beRnEXfAbtAWPUPefj3rgCG7b9AqAe51Qlzw==}
@@ -5937,7 +5937,7 @@ snapshots:
       - vite
       - webpack-sources
 
-  '@nuxt/icon@1.5.2(magicast@0.3.5)(rollup@4.22.4)(vite@5.4.8(@types/node@22.7.1)(sass@1.77.6)(terser@5.33.0))(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3)':
+  '@nuxt/icon@1.5.4(magicast@0.3.5)(rollup@4.22.4)(vite@5.4.8(@types/node@22.7.1)(sass@1.77.6)(terser@5.33.0))(vue@3.5.10(typescript@5.6.2))(webpack-sources@3.2.3)':
     dependencies:
       '@iconify/collections': 1.0.463
       '@iconify/types': 2.0.0
@@ -5949,6 +5949,7 @@ snapshots:
       fast-glob: 3.3.2
       local-pkg: 0.5.0
       mlly: 1.7.1
+      ohash: 1.1.4
       pathe: 1.1.2
       std-env: 3.7.0
     transitivePeerDependencies:

@@ -33,7 +33,7 @@
     "@vueuse/core": "^11.1.0",
     "@vueuse/nuxt": "^11.1.0",
     "@nuxt/eslint": "^0.5.7",
-    "@nuxt/icon": "^1.5.2",
+    "@nuxt/icon": "^1.5.4",
     "typescript": "^5.6.2",
     "prettier": "^3.3.3",
     "eslint": "^9.12.0",
