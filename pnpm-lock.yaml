@@ -24,8 +24,8 @@ importers:
         specifier: ^2.1.1
         version: 2.1.1
       lucide-vue-next:
-        specifier: ^0.446.0
-        version: 0.446.0(vue@3.5.10(typescript@5.6.2))
+        specifier: ^0.447.0
+        version: 0.447.0(vue@3.5.10(typescript@5.6.2))
       nuxt:
         specifier: ^3.13.2
         version: 3.13.2(@parcel/watcher@2.4.1)(@types/node@22.7.1)(encoding@0.1.13)(eslint@9.12.0(jiti@1.21.6))(ioredis@5.4.1)(magicast@0.3.5)(optionator@0.9.4)(rollup@4.22.4)(sass@1.77.6)(terser@5.33.0)(typescript@5.6.2)(vite@5.4.8(@types/node@22.7.1)(sass@1.77.6)(terser@5.33.0))(vue-tsc@2.1.6(typescript@5.6.2))(webpack-sources@3.2.3)
@@ -3283,8 +3283,8 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
-  lucide-vue-next@0.446.0:
-    resolution: {integrity: sha512-ddx9NRczKulV4a2GcbY9F5l/zuUW0ARB4mRc+kOzFur9XvvrVxVmAmhqVChZUlj9Wmraopn8ujDfhxB6FlVfIw==}
+  lucide-vue-next@0.447.0:
+    resolution: {integrity: sha512-NXD61EHwgdIHZsVxFGYHowrPZnhWJOByVJ23LJB28BnXII29Cg157DmIbvrJ7idwbfhwYhCZ2moRfKOCwIvNiw==}
     peerDependencies:
       vue: '>=3.0.1'
 
@@ -8833,7 +8833,7 @@ snapshots:
     dependencies:
       yallist: 3.1.1
 
-  lucide-vue-next@0.446.0(vue@3.5.10(typescript@5.6.2)):
+  lucide-vue-next@0.447.0(vue@3.5.10(typescript@5.6.2)):
     dependencies:
       vue: 3.5.10(typescript@5.6.2)
 
