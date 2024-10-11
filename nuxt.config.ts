@@ -3,38 +3,42 @@ const baseUrl = process.env.BASE_URL;
 export default defineNuxtConfig({
   modules: [
     "@zadigetvoltaire/nuxt-well-known",
-    "@nuxtjs/google-fonts",
+    "pinia-plugin-persistedstate/nuxt",
+    "@nuxt/test-utils/module",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
+    "@vee-validate/nuxt",
+    "nuxt-security",
     "@nuxt/eslint",
     "@nuxtjs/i18n",
     "@vueuse/nuxt",
     "shadcn-nuxt",
     "@nuxt/image",
+    "@nuxt/fonts",
     "@nuxtjs/seo",
+    "@pinia/nuxt",
     "@nuxt/icon",
   ],
   i18n: {
-    baseUrl,
-    defaultLocale: "tr",
-    langDir: "locales/",
     locales: [
       {
-        code: "tr",
+        language: "tr-TR",
         name: "Türkçe",
-        iso: "tr-TR",
         file: "tr.ts",
+        code: "tr",
       },
       {
-        code: "en",
+        language: "en-US",
         name: "English",
-        iso: "en-US",
         file: "en.ts",
+        code: "en",
       },
     ],
+    defaultLocale: "tr",
+    langDir: "locales/",
+    baseUrl,
   },
   wellKnown: {
-    devtools: true,
     securityTxt: {
       canonical: [`${baseUrl}/.well-known/security.txt`],
       contacts: ["mailto:you@domain.com"],
@@ -42,11 +46,10 @@ export default defineNuxtConfig({
       expires: new Date("2025-09-25"),
       disabled: false,
     },
+    devtools: true,
   },
-  googleFonts: {
-    families: {
-      Inter: true,
-    },
+  security: {
+    rateLimiter: false,
   },
   imports: {
     dirs: ["types"],
