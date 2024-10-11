@@ -5,7 +5,6 @@ import {
   type DropdownMenuSubTriggerProps,
   useForwardProps,
 } from "radix-vue";
-import { ChevronRight } from "lucide-vue-next";
 
 const props = defineProps<
   DropdownMenuSubTriggerProps & { class?: HTMLAttributes["class"] }
@@ -31,6 +30,6 @@ const forwardedProps = useForwardProps(delegatedProps);
     "
   >
     <slot />
-    <ChevronRight class="ml-auto h-4 w-4" />
+    <Icon name="lucide:chevron-right" class="ml-auto h-4 w-4" />
   </DropdownMenuSubTrigger>
 </template>

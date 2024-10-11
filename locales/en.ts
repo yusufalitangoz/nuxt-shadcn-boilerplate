@@ -8,7 +8,7 @@ export default {
       title: "Home",
     },
   },
-  errorPage: {
+  error: {
     button: "Go back to home",
   },
   colorMode: {
@@ -18,7 +18,7 @@ export default {
   },
   linkGroups: [
     {
-      title: "Navigation",
+      name: "Navigation",
       links: ["Home", "Error Page"],
     },
   ],

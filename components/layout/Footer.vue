@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { navigationMenuTriggerStyle } from "./ui/navigation-menu";
+import { navigationMenuTriggerStyle } from "../ui/navigation-menu";
 
 defineProps<{
   linkGroups: LinkGroup[];
@@ -10,12 +10,12 @@ defineProps<{
 <template>
   <footer class="border-t w-full text-sm">
     <section class="container py-10 grid md:grid-cols-2 gap-10">
-      <section class="grid place-items-start gap-3">
+      <div class="grid place-items-start gap-3">
         <Logo />
         <p class="text-muted-foreground">
           {{ $t("footer.description") }}
         </p>
-        <section class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-2">
           <NuxtLink
             v-for="{ icon, to } in socials"
             :key="icon"
@@ -26,10 +26,10 @@ defineProps<{
               <Icon :name="icon!" size="17" />
             </Button>
           </NuxtLink>
-        </section>
-      </section>
-      <section class="flex flex-wrap gap-10 md:justify-end">
-        <section
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-10 md:justify-end">
+        <div
           v-for="{ name, links } in linkGroups"
           :key="name"
           class="space-y-3"
@@ -47,8 +47,8 @@ defineProps<{
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>
-        </section>
-      </section>
+        </div>
+      </div>
     </section>
   </footer>
 </template>

@@ -8,7 +8,7 @@ export default {
       title: "Ana Sayfa",
     },
   },
-  errorPage: {
+  error: {
     button: "Ana sayfaya dön",
   },
   colorMode: {
@@ -18,7 +18,7 @@ export default {
   },
   linkGroups: [
     {
-      title: "Navigasyon",
+      name: "Navigasyon",
       links: ["Ana Sayfa", "Hata Sayfası"],
     },
   ],

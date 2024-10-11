@@ -28,7 +28,7 @@ const headerLinks = computed<Link[]>(() =>
 const footerLinkGroups = computed<LinkGroup[]>(() =>
   [
     {
-      name: "linkGroups.0.title",
+      name: "linkGroups.0.name",
       links: [
         { name: "linkGroups.0.links.0", to: "/" },
         { name: "linkGroups.0.links.1", to: "/error" },
@@ -46,7 +46,7 @@ const footerLinkGroups = computed<LinkGroup[]>(() =>
 const footerSocials = computed<Link[]>(() =>
   [
     {
-      icon: "prime:twitter",
+      icon: "bi:twitter-x",
       to: "https://www.twitter.com",
     },
     {
@@ -65,17 +65,14 @@ const footerSocials = computed<Link[]>(() =>
 </script>
 
 <template>
-  <section>
-    <Header :links="headerLinks">
-      <HeaderLangSwitcher :available-locales="availableLocales" />
-      <HeaderColorModeSwitcher
-        :color-mode="colorMode.preference"
-        @update:color-mode="colorMode.preference = $event"
-      />
-    </Header>
-    <main class="pt-[65px]">
-      <slot />
-    </main>
-    <Footer :link-groups="footerLinkGroups" :socials="footerSocials" />
-  </section>
+  <main class="pt-[65px]">
+    <LayoutHeader
+      :available-locales="availableLocales"
+      :color-mode="colorMode.preference"
+      :links="headerLinks"
+      @update:color-mode="colorMode.preference = $event"
+    />
+    <slot />
+    <LayoutFooter :link-groups="footerLinkGroups" :socials="footerSocials" />
+  </main>
 </template>

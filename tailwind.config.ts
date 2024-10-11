@@ -1,11 +1,10 @@
-const animate = require("tailwindcss-animate");
+import type { Config } from "tailwindcss";
+import animate from "tailwindcss-animate";
 
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+export default <Partial<Config>>{
   darkMode: ["class"],
   safelist: ["dark"],
   prefix: "",
-
   theme: {
     container: {
       center: true,
@@ -58,27 +57,27 @@ module.exports = {
       },
       keyframes: {
         "accordion-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: 0 },
+          to: { height: "0" },
         },
         "collapsible-down": {
-          from: { height: 0 },
+          from: { height: "0" },
           to: { height: "var(--radix-collapsible-content-height)" },
         },
         "collapsible-up": {
           from: { height: "var(--radix-collapsible-content-height)" },
-          to: { height: 0 },
+          to: { height: "0" },
         },
       },
       animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "collapsible-down": "collapsible-down 0.2s ease-in-out",
-        "collapsible-up": "collapsible-up 0.2s ease-in-out",
+        "accordion-down": "accordion-down 2s ease-out",
+        "accordion-up": "accordion-up 2s ease-out",
+        "collapsible-down": "collapsible-down 2s ease-in-out",
+        "collapsible-up": "collapsible-up 2s ease-in-out",
       },
     },
   },

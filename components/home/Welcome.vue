@@ -11,7 +11,7 @@ import packageJson from "@/package.json";
       <p class="text-3xl text-muted-foreground">
         {{ $t("nuxtSiteConfig.description") }}
       </p>
-      <section class="flex flex-wrap justify-center gap-3 my-10">
+      <div class="flex flex-wrap justify-center gap-3 my-10">
         <Button as-child>
           <NuxtLink target="_blank" to="https://nuxt.com">
             <Icon name="logos:nuxt-icon" class="mr-2" />
@@ -29,11 +29,11 @@ import packageJson from "@/package.json";
             to="https://github.com/yusufalitangoz/nuxt-shadcn-boilerplate"
             target="_blank"
           >
-            <Icon name="bi:github" class="mr-2" size="18" />
+            <Icon name="simple-icons:github" class="mr-2" size="18" />
             GitHub
           </NuxtLink>
         </Button>
-      </section>
+      </div>
     </section>
     <pre class="text-xs border p-5 rounded-lg overflow-auto w-full max-w-max">{{
       packageJson
