@@ -65,14 +65,16 @@ const footerSocials = computed<Link[]>(() =>
 </script>
 
 <template>
-  <main class="pt-[65px]">
+  <div>
     <LayoutHeader
       :available-locales="availableLocales"
       :color-mode="colorMode.preference"
       :links="headerLinks"
       @update:color-mode="colorMode.preference = $event"
     />
-    <slot />
+    <main class="pt-[65px] min-h-screen">
+      <slot />
+    </main>
     <LayoutFooter :link-groups="footerLinkGroups" :socials="footerSocials" />
-  </main>
+  </div>
 </template>

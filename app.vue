@@ -39,7 +39,7 @@ const description = computed(() =>
       <NuxtLoadingIndicator />
       <NuxtRouteAnnouncer />
       <NuxtLayout>
-        <NuxtPage class="min-h-screen" />
+        <NuxtPage />
       </NuxtLayout>
     </Body>
   </Html>
