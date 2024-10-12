@@ -34,7 +34,9 @@ const colorModeIcons = new Map<string, string>([
     </NavigationMenu>
   </DefineNavigationMenu>
   <header class="fixed top-0 left-0 w-full py-3 bg-background border-b z-50">
-    <section class="container flex justify-between [&>div]:flex [&>div]:gap-3">
+    <section
+      class="container flex justify-between [&>div]:flex [&>div]:items-center [&>div]:gap-3"
+    >
       <div>
         <Logo />
         <ReuseNavigationMenu class="hidden md:flex" />
