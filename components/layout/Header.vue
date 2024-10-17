@@ -26,7 +26,7 @@ const colorModeIcons = new Map<string, string>([
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem v-for="{ name, to } in links" :key="to">
-          <NuxtLink :class="navigationMenuTriggerStyle()" :href="to">
+          <NuxtLink :class="navigationMenuTriggerStyle()" :to="to">
             {{ name }}
           </NuxtLink>
         </NavigationMenuItem>
