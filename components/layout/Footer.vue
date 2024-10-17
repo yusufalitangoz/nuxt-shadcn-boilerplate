@@ -9,7 +9,7 @@ defineProps<{
 
 <template>
   <footer class="border-t w-full text-sm">
-    <section class="container py-10 grid md:grid-cols-2 gap-10">
+    <section class="container py-10 grid md:grid-cols-2 items-start gap-10">
       <div class="grid place-items-start gap-3">
         <Logo />
         <p class="text-muted-foreground">
