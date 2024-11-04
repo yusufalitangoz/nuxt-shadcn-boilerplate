@@ -24,7 +24,7 @@
     "@nuxt/fonts": "^0.10.0",
     "@nuxtjs/i18n": "^8.5.5",
     "shadcn-nuxt": "^0.10.4",
-    "@pinia/nuxt": "^0.5.5",
+    "@pinia/nuxt": "^0.7.0",
     "@nuxt/image": "^1.8.1",
     "vue-router": "^4.4.5",
     "radix-vue": "^1.9.7",
