@@ -2,12 +2,21 @@
 import type { NuxtError } from "#app";
 
 const { error } = defineProps<{ error: NuxtError }>();
+const localePath = useLocalePath();
+const { statusCode } = error;
 
 useHead({
-  title: error.statusCode.toString(),
+  title: statusCode.toString(),
 });
 </script>
 
 <template>
-  <Error :status-code="error.statusCode" />
+  <main class="h-screen flex justify-center items-center flex-col">
+    <h1 class="text-4xl font-extrabold mb-5">{{ statusCode }}</h1>
+    <Button as-child>
+      <NuxtLink :to="localePath('/')">
+        {{ $t("error.button") }}
+      </NuxtLink>
+    </Button>
+  </main>
 </template>
