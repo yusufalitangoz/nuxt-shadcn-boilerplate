@@ -1,6 +1,4 @@
 <script setup lang="ts">
-defineOgImageComponent("Nuxt");
-
 const head = useLocaleHead({
   identifierAttribute: "id",
   addSeoAttributes: true,
@@ -16,6 +14,11 @@ const title = computed(() =>
 const description = computed(() =>
   t((route.meta.description as string) ?? "nuxtSiteConfig.description"),
 );
+
+defineOgImageComponent("Default", {
+  description,
+  title,
+});
 </script>
 
 <template>

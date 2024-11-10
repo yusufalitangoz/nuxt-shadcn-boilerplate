@@ -38,7 +38,7 @@ const colorModeIcons = new Map<string, string>([
       class="container flex justify-between [&>div]:flex [&>div]:items-center [&>div]:gap-3"
     >
       <div>
-        <Logo />
+        <LayoutLogo />
         <ReuseNavigationMenu class="hidden md:flex" />
       </div>
       <div>
