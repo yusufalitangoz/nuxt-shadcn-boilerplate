@@ -34,16 +34,16 @@ defineProps<{
           :key="name"
           class="space-y-3"
         >
-          <h1 class="font-semibold">{{ name }}</h1>
+          <h1 class="font-semibold">{{ $t(name) }}</h1>
           <NavigationMenu>
             <NavigationMenuList class="grid -ml-4">
               <NavigationMenuItem
                 v-for="{ name: linkName, to } in links"
                 :key="to"
               >
-                <NuxtLink :class="navigationMenuTriggerStyle()" :to="to">
-                  {{ linkName }}
-                </NuxtLink>
+                <NuxtLinkLocale :class="navigationMenuTriggerStyle()" :to="to">
+                  {{ $t(linkName!) }}
+                </NuxtLinkLocale>
               </NavigationMenuItem>
             </NavigationMenuList>
           </NavigationMenu>

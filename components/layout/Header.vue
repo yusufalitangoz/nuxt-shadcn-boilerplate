@@ -26,9 +26,9 @@ const colorModeIcons = new Map<string, string>([
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem v-for="{ name, to } in links" :key="to">
-          <NuxtLink :class="navigationMenuTriggerStyle()" :to="to">
-            {{ name }}
-          </NuxtLink>
+          <NuxtLinkLocale :class="navigationMenuTriggerStyle()" :to="to">
+            {{ $t(name!) }}
+          </NuxtLinkLocale>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
@@ -54,9 +54,9 @@ const colorModeIcons = new Map<string, string>([
               :key="code"
               as-child
             >
-              <NuxtLink :to="code">
+              <SwitchLocalePathLink :locale="code">
                 {{ name }}
-              </NuxtLink>
+              </SwitchLocalePathLink>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import packageJson from "@/package.json";
+defineProps<{ package: object }>();
 </script>
 
 <template>
@@ -36,7 +36,7 @@ import packageJson from "@/package.json";
       </div>
     </section>
     <pre class="text-xs border p-5 rounded-lg overflow-auto w-full max-w-max">{{
-      packageJson
+      package
     }}</pre>
   </section>
 </template>
