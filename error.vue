@@ -13,9 +13,12 @@ useHead({
   <main class="h-screen flex justify-center items-center flex-col">
     <h1 class="text-4xl font-extrabold mb-5">{{ statusCode }}</h1>
     <Button as-child>
-      <NuxtLinkLocale :to="'/'">
+      <NuxtLinkLocale to="/">
         {{ $t("error.button") }}
       </NuxtLinkLocale>
     </Button>
   </main>
+  <DevOnly>
+    {{ error }}
+  </DevOnly>
 </template>
