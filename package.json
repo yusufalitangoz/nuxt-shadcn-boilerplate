@@ -3,7 +3,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "lint:fix": "eslint . --fix && prettier --write --list-different . && npx nuxi typecheck",
+    "lint:fix": "eslint . --fix && prettier --write --list-different . && bunx nuxi typecheck",
     "postinstall": "nuxt prepare",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
