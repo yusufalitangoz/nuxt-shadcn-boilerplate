@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   modules: [
     "@zadigetvoltaire/nuxt-well-known",
     "pinia-plugin-persistedstate/nuxt",
-    "@nuxt/test-utils/module",
     "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@vee-validate/nuxt",

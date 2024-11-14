@@ -38,18 +38,13 @@
     "@zadigetvoltaire/nuxt-well-known": "^0.0.13",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "@nuxtjs/color-mode": "^3.5.2",
-    "@nuxt/test-utils": "^3.14.4",
-    "playwright-core": "^1.48.2",
-    "@vue/test-utils": "^2.4.6",
     "@vueuse/core": "^11.2.0",
     "@vueuse/nuxt": "^11.2.0",
     "@nuxt/eslint": "^0.6.1",
     "typescript": "^5.6.3",
     "@nuxt/icon": "^1.7.5",
-    "happy-dom": "^15.11.6",
     "prettier": "^3.3.3",
     "eslint": "^9.14.0",
-    "vue-tsc": "^2.1.10",
-    "vitest": "^2.1.5"
+    "vue-tsc": "^2.1.10"
   }
 }
