@@ -43,7 +43,7 @@ export default defineNuxtConfig({
       canonical: [`${baseUrl}/.well-known/security.txt`],
       contacts: ["mailto:you@domain.com"],
       preferredLanguages: ["tr", "en"],
-      expires: new Date("2025-09-25"),
+      expires: new Date("2025-11-14"),
       disabled: false,
     },
     devtools: true,
@@ -63,5 +63,5 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-  compatibilityDate: "2024-09-25",
+  compatibilityDate: "2024-11-14",
 });
