@@ -1,29 +1,31 @@
 <script setup lang="ts">
 import type { LocaleObject } from "@nuxtjs/i18n";
 
-const { locale, locales } = useI18n();
+const switchLocalePath = useSwitchLocalePath();
+const { locale, locales, t } = useI18n();
+const localePath = useLocalePath();
 const colorMode = useColorMode();
 
-const availableLocales = computed<LocaleObject[]>(() => {
-  return locales.value.filter((i) => i.code !== locale.value);
-});
+const availableLocales = computed<LocaleObject[]>(() =>
+  locales.value
+    .filter(({ code }) => code !== locale.value)
+    .map((locale) => ({
+      ...locale,
+      code: switchLocalePath(locale.code),
+    })),
+);
 
-const headerLinks: Link[] = [
-  { name: "linkGroups.0.links.0", to: "/" },
-  { name: "linkGroups.0.links.1", to: "/error" },
-];
-
-const footerLinkGroups: LinkGroup[] = [
+const linkGroups = computed<LinkGroup[]>(() => [
   {
-    name: "linkGroups.0.name",
+    name: t("linkGroups.0.name"),
     links: [
-      { name: "linkGroups.0.links.0", to: "/" },
-      { name: "linkGroups.0.links.1", to: "/error" },
+      { name: t("linkGroups.0.links.0"), to: localePath("/") },
+      { name: t("linkGroups.0.links.1"), to: localePath("/error") },
     ],
   },
-];
+]);
 
-const footerSocials: Link[] = [
+const socials: Link[] = [
   {
     icon: "bi:twitter-x",
     to: "https://www.twitter.com",
@@ -41,15 +43,16 @@ const footerSocials: Link[] = [
 
 <template>
   <div>
-    <LayoutHeader
-      :available-locales="availableLocales"
-      :color-mode="colorMode.preference"
-      :links="headerLinks"
-      @update:color-mode="colorMode.preference = $event"
-    />
+    <LayoutHeader :links="linkGroups[0].links">
+      <LayoutColorModeMenu
+        :color-mode="colorMode.preference"
+        @update:color-mode="colorMode.preference = $event"
+      />
+      <LayoutLanguageMenu :available-locales="availableLocales" />
+    </LayoutHeader>
     <main class="pt-[65px] min-h-screen">
       <slot />
     </main>
-    <LayoutFooter :link-groups="footerLinkGroups" :socials="footerSocials" />
+    <LayoutFooter :link-groups="linkGroups" :socials="socials" />
   </div>
 </template>

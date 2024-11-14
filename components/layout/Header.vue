@@ -1,24 +1,11 @@
 <script setup lang="ts">
 import { navigationMenuTriggerStyle } from "../ui/navigation-menu";
-import type { LocaleObject } from "@nuxtjs/i18n";
 
 defineProps<{
-  availableLocales: LocaleObject[];
-  colorMode: string;
   links: Link[];
 }>();
 
-defineEmits<{
-  (e: "update:colorMode", value: string): void;
-}>();
-
 const [DefineNavigationMenu, ReuseNavigationMenu] = createReusableTemplate();
-
-const colorModeIcons = new Map<string, string>([
-  ["system", "lucide:monitor"],
-  ["dark", "lucide:moon"],
-  ["light", "lucide:sun"],
-]);
 </script>
 
 <template>
@@ -26,9 +13,9 @@ const colorModeIcons = new Map<string, string>([
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem v-for="{ name, to } in links" :key="to">
-          <NuxtLinkLocale :class="navigationMenuTriggerStyle()" :to="to">
-            {{ $t(name!) }}
-          </NuxtLinkLocale>
+          <NuxtLink :class="navigationMenuTriggerStyle()" :to="to">
+            {{ name }}
+          </NuxtLink>
         </NavigationMenuItem>
       </NavigationMenuList>
     </NavigationMenu>
@@ -42,44 +29,7 @@ const colorModeIcons = new Map<string, string>([
         <ReuseNavigationMenu class="hidden md:flex" />
       </div>
       <div>
-        <DropdownMenu>
-          <DropdownMenuTrigger as-child>
-            <Button size="icon" variant="outline">
-              <Icon name="lucide:globe" size="18" />
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem
-              v-for="{ code, name } in availableLocales"
-              :key="code"
-              as-child
-            >
-              <SwitchLocalePathLink :locale="code">
-                {{ name }}
-              </SwitchLocalePathLink>
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
-        <DropdownMenu>
-          <DropdownMenuTrigger as-child>
-            <Button size="icon" variant="outline">
-              <ClientOnly>
-                <Icon :name="colorModeIcons.get(colorMode)!" size="18" />
-              </ClientOnly>
-            </Button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent>
-            <DropdownMenuItem @click="$emit('update:colorMode', 'light')">
-              {{ $t("colorMode.light") }}
-            </DropdownMenuItem>
-            <DropdownMenuItem @click="$emit('update:colorMode', 'dark')">
-              {{ $t("colorMode.dark") }}
-            </DropdownMenuItem>
-            <DropdownMenuItem @click="$emit('update:colorMode', 'system')">
-              {{ $t("colorMode.system") }}
-            </DropdownMenuItem>
-          </DropdownMenuContent>
-        </DropdownMenu>
+        <slot />
         <Sheet>
           <SheetTrigger class="flex md:hidden" as-child>
             <Button variant="outline" size="icon">
