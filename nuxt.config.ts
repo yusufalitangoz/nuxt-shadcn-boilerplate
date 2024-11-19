@@ -8,8 +8,9 @@ export default defineNuxtConfig({
     "@nuxtjs/color-mode",
     "@vee-validate/nuxt",
     "@nuxtjs/fontaine",
+    "nuxt-vitalizer",
     "nuxt-security",
-    "nuxt-booster",
+    "@unocss/nuxt",
     "@nuxt/eslint",
     "@nuxtjs/i18n",
     "@vueuse/nuxt",
@@ -19,6 +20,7 @@ export default defineNuxtConfig({
     "@nuxtjs/seo",
     "@pinia/nuxt",
     "@nuxt/icon",
+    "nuxt-svgo",
   ],
   i18n: {
     locales: [
@@ -49,12 +51,8 @@ export default defineNuxtConfig({
     },
     devtools: true,
   },
-  image: {
-    domains: ["img.youtube.com", "i.vimeocdn.com"],
-    alias: {
-      youtube: "https://img.youtube.com",
-      vimeo: "https://i.vimeocdn.com",
-    },
+  svgo: {
+    autoImportPath: false,
   },
   security: {
     rateLimiter: false,
