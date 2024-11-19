@@ -10,7 +10,6 @@ export default defineNuxtConfig({
     "@nuxtjs/fontaine",
     "nuxt-vitalizer",
     "nuxt-security",
-    "@unocss/nuxt",
     "@nuxt/eslint",
     "@nuxtjs/i18n",
     "@vueuse/nuxt",
