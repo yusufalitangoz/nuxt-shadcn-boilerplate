@@ -3,6 +3,7 @@ import {
   transformerDirectives,
   presetAttributify,
   presetTypography,
+  presetWebFonts,
   defineConfig,
   presetIcons,
   presetUno,
@@ -10,10 +11,11 @@ import {
 
 export default defineConfig({
   presets: [
-    presetUno(),
     presetAttributify(),
-    presetIcons(),
     presetTypography(),
+    presetWebFonts(),
+    presetIcons(),
+    presetUno(),
   ],
   transformers: [transformerDirectives(), transformerVariantGroup()],
 });
