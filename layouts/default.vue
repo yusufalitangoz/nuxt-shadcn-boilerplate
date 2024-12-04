@@ -48,11 +48,11 @@ const socials: Link[] = [
         :color-mode="colorMode.preference"
         @update:color-mode="colorMode.preference = $event"
       />
-      <LayoutLanguageMenu :available-locales="availableLocales" />
+      <LayoutLanguageMenu :available-locales />
     </LayoutHeader>
     <main class="pt-[65px] min-h-screen">
       <slot />
     </main>
-    <LayoutFooter :link-groups="linkGroups" :socials="socials" />
+    <LayoutFooter :link-groups :socials />
   </div>
 </template>

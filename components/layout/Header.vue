@@ -21,7 +21,7 @@ const [DefineNavigationMenu, ReuseNavigationMenu] = createReusableTemplate();
     </NavigationMenu>
   </DefineNavigationMenu>
   <header class="fixed top-0 left-0 w-full py-3 bg-background border-b z-50">
-    <section
+    <nav
       class="container flex justify-between [&>div]:flex [&>div]:items-center [&>div]:gap-3"
     >
       <div>
@@ -41,6 +41,6 @@ const [DefineNavigationMenu, ReuseNavigationMenu] = createReusableTemplate();
           </SheetContent>
         </Sheet>
       </div>
-    </section>
+    </nav>
   </header>
 </template>
