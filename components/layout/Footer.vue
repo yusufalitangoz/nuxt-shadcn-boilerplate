@@ -16,16 +16,19 @@ defineProps<{
           {{ $t("footer.description") }}
         </p>
         <div class="flex flex-wrap gap-2">
-          <NuxtLink
-            v-for="{ icon, to } in socials"
+          <Button
+            v-for="{ name, icon, to } in socials"
             :key="icon"
-            target="_blank"
-            :to="to"
+            :aria-label="name"
+            variant="outline"
+            class="size-8"
+            size="icon"
+            as-child
           >
-            <Button variant="outline" class="size-8" size="icon">
+            <NuxtLink target="_blank" :to="to">
               <Icon :name="icon!" size="17" />
-            </Button>
-          </NuxtLink>
+            </NuxtLink>
+          </Button>
         </div>
       </div>
       <div class="flex flex-wrap gap-10 md:justify-end">
@@ -40,6 +43,7 @@ defineProps<{
               <NavigationMenuItem
                 v-for="{ name: linkName, to } in links"
                 :key="to"
+                as-child
               >
                 <NuxtLink :class="navigationMenuTriggerStyle()" :to="to">
                   {{ linkName }}

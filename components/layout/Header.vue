@@ -12,7 +12,7 @@ const [DefineNavigationMenu, ReuseNavigationMenu] = createReusableTemplate();
   <DefineNavigationMenu>
     <NavigationMenu>
       <NavigationMenuList>
-        <NavigationMenuItem v-for="{ name, to } in links" :key="to">
+        <NavigationMenuItem v-for="{ name, to } in links" :key="to" as-child>
           <NuxtLink :class="navigationMenuTriggerStyle()" :to="to">
             {{ name }}
           </NuxtLink>
@@ -32,7 +32,7 @@ const [DefineNavigationMenu, ReuseNavigationMenu] = createReusableTemplate();
         <slot />
         <Sheet>
           <SheetTrigger class="flex md:hidden" as-child>
-            <Button variant="outline" size="icon">
+            <Button variant="outline" size="icon" aria-label="Header Menu">
               <Icon name="lucide:menu" size="20" />
             </Button>
           </SheetTrigger>

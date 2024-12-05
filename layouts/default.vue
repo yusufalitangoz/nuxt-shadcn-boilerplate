@@ -27,16 +27,19 @@ const linkGroups = computed<LinkGroup[]>(() => [
 
 const socials: Link[] = [
   {
+    to: "https://www.x.com",
     icon: "bi:twitter-x",
-    to: "https://www.twitter.com",
+    name: "X",
   },
   {
-    icon: "bi:instagram",
     to: "https://www.instagram.com",
+    icon: "bi:instagram",
+    name: "Instagram",
   },
   {
-    icon: "bi:linkedin",
     to: "https://www.linkedin.com",
+    icon: "bi:linkedin",
+    name: "LinkedIn",
   },
 ];
 </script>

@@ -9,7 +9,7 @@ defineProps<{
 <template>
   <DropdownMenu>
     <DropdownMenuTrigger as-child>
-      <Button size="icon" variant="outline">
+      <Button size="icon" variant="outline" aria-label="Language Menu">
         <Icon name="lucide:globe" size="18" />
       </Button>
     </DropdownMenuTrigger>
