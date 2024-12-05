@@ -7,12 +7,12 @@ const head = useLocaleHead({
 const route = useRoute();
 const { t } = useI18n();
 
-const title = computed(() =>
-  t((route.meta.title as string) ?? "nuxtSiteConfig.name"),
-);
-
 const description = computed(() =>
   t((route.meta.description as string) ?? "nuxtSiteConfig.description"),
+);
+
+const title = computed(() =>
+  t((route.meta.title as string) ?? "nuxtSiteConfig.name"),
 );
 
 defineOgImageComponent("Default", {
