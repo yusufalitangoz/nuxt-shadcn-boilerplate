@@ -4,7 +4,7 @@ import {
   NavigationMenuList,
   type NavigationMenuListProps,
   useForwardProps,
-} from "radix-vue";
+} from "reka-ui";
 
 const props = defineProps<
   NavigationMenuListProps & { class?: HTMLAttributes["class"] }

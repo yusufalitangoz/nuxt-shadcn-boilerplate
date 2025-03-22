@@ -4,7 +4,7 @@ import {
   DropdownMenuSubTrigger,
   type DropdownMenuSubTriggerProps,
   useForwardProps,
-} from "radix-vue";
+} from "reka-ui";
 
 const props = defineProps<
   DropdownMenuSubTriggerProps & { class?: HTMLAttributes["class"] }
