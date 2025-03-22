@@ -18,8 +18,11 @@ export default {
   },
   linkGroups: [
     {
-      name: "Navigation",
+      name: "General",
       links: ["Home", "Error Page"],
+    },
+    {
+      name: "Social Media",
     },
   ],
   footer: {

@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import { navigationMenuTriggerStyle } from "../ui/navigation-menu";
 
-defineProps<{
-  linkGroups: LinkGroup[];
-  socials: Link[];
-}>();
+const { social, general } = storeToRefs(useLinkGroupsStore());
 </script>
 
 <template>
@@ -17,7 +14,7 @@ defineProps<{
         </p>
         <div class="flex flex-wrap gap-2">
           <Button
-            v-for="{ name, icon, to } in socials"
+            v-for="{ name, icon, to } in social.links"
             :key="icon"
             :aria-label="name"
             variant="outline"
@@ -32,11 +29,7 @@ defineProps<{
         </div>
       </div>
       <div class="flex flex-wrap gap-10 md:justify-end">
-        <div
-          v-for="{ name, links } in linkGroups"
-          :key="name"
-          class="space-y-3"
-        >
+        <div v-for="{ name, links } in [general]" :key="name" class="space-y-3">
           <h1 class="font-semibold">{{ name }}</h1>
           <NavigationMenu>
             <NavigationMenuList class="grid -ml-4">

@@ -18,8 +18,11 @@ export default {
   },
   linkGroups: [
     {
-      name: "Navigasyon",
+      name: "Genel",
       links: ["Ana Sayfa", "Hata Sayfası"],
+    },
+    {
+      name: "Sosyal Medya",
     },
   ],
   footer: {
