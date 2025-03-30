@@ -1,8 +1,8 @@
 <script setup lang="ts">
 const head = useLocaleHead({
-  identifierAttribute: "id",
-  addSeoAttributes: true,
-  addDirAttribute: true,
+  key: "id",
+  seo: true,
+  dir: true,
 });
 const route = useRoute();
 const { t } = useI18n();
@@ -28,7 +28,10 @@ useHead({
 </script>
 
 <template>
-  <Html :lang="head.htmlAttrs.lang" :dir="head.htmlAttrs.dir">
+  <Html
+    :lang="head.htmlAttrs?.lang ?? 'en'"
+    :dir="head.htmlAttrs?.dir ?? 'ltr'"
+  >
     <Head>
       <Title>{{ title }}</Title>
       <Meta :content="description" name="description" />

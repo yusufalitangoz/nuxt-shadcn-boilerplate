@@ -26,24 +26,21 @@ export default defineNuxtConfig({
       {
         language: "tr-TR",
         name: "Türkçe",
-        file: "tr.ts",
         code: "tr",
       },
       {
         language: "en-US",
         name: "English",
-        file: "en.ts",
         code: "en",
       },
     ],
     defaultLocale: "tr",
-    langDir: "locales/",
     baseUrl,
   },
   wellKnown: {
     securityTxt: {
       canonical: [`${baseUrl}/.well-known/security.txt`],
-      expires: new Date("2025-11-14").toISOString(),
+      expires: new Date("2025-03-30").toISOString(),
       contacts: ["mailto:you@domain.com"],
       preferredLanguages: ["tr", "en"],
       disabled: false,
@@ -68,5 +65,9 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
-  compatibilityDate: "2024-11-14",
+  // TODO: enable
+  ogImage: {
+    enabled: false,
+  },
+  compatibilityDate: "2025-03-30",
 });

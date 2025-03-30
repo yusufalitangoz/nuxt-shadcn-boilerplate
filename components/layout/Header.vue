@@ -13,7 +13,7 @@ const availableLocales = computed<LocaleObject[]>(() =>
     .filter(({ code }) => code !== locale.value)
     .map((locale) => ({
       ...locale,
-      code: switchLocalePath(locale.code),
+      code: switchLocalePath(locale.code) as "tr" | "en",
     })),
 );
 
