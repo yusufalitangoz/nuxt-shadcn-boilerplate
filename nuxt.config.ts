@@ -13,6 +13,7 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@nuxtjs/i18n",
     "@vueuse/nuxt",
+    "@pinia/nuxt",
     "shadcn-nuxt",
     "@nuxt/image",
     "@nuxt/fonts",
