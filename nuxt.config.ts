@@ -18,7 +18,6 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "@nuxt/fonts",
     "@nuxtjs/seo",
-    "@pinia/nuxt",
     "@nuxt/icon",
     "nuxt-svgo",
   ],
