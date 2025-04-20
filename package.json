@@ -8,13 +8,13 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "build": "nuxt build",
-    "dev": "nuxt dev"
+    "dev": "nuxt dev -o"
   },
   "dependencies": {
     "@nuxt/fonts": "^0.10.3",
     "@nuxt/image": "^1.10.0",
     "@nuxtjs/fontaine": "^0.4.4",
-    "@nuxtjs/i18n": "^9.5.2",
+    "@nuxtjs/i18n": "^9.5.3",
     "@nuxtjs/seo": "2.0.0-rc.23",
     "@pinia/nuxt": "^0.7.0",
     "@vee-validate/nuxt": "^4.15.0",
@@ -30,22 +30,22 @@
     "pinia-plugin-persistedstate": "^4.2.0",
     "reka-ui": "^2.2.0",
     "shadcn-nuxt": "^0.10.4",
-    "tailwind-merge": "^3.1.0",
+    "tailwind-merge": "^3.2.0",
     "tailwindcss-animate": "^1.0.7",
     "vee-validate": "^4.15.0",
     "vue": "^3.5.13",
     "vue-router": "^4.5.0",
-    "zod": "^3.24.2"
+    "zod": "^3.24.3"
   },
   "devDependencies": {
     "@nuxt/eslint": "^0.6.2",
-    "@nuxt/icon": "^1.11.0",
+    "@nuxt/icon": "^1.12.0",
     "@nuxtjs/color-mode": "^3.5.2",
     "@nuxtjs/tailwindcss": "^6.13.2",
     "@vueuse/core": "^11.3.0",
     "@vueuse/nuxt": "^11.3.0",
     "@zadigetvoltaire/nuxt-well-known": "^0.0.13",
-    "eslint": "^9.24.0",
+    "eslint": "^9.25.0",
     "prettier": "^3.5.3",
     "typescript": "^5.8.3",
     "vue-tsc": "^2.2.8"
