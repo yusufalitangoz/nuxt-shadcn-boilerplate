@@ -26,11 +26,13 @@ export default defineNuxtConfig({
       {
         language: "tr-TR",
         name: "Türkçe",
+        file: "tr.ts",
         code: "tr",
       },
       {
         language: "en-US",
         name: "English",
+        file: "en.ts",
         code: "en",
       },
     ],
@@ -64,10 +66,6 @@ export default defineNuxtConfig({
   },
   devtools: {
     enabled: true,
-  },
-  // TODO: enable
-  ogImage: {
-    enabled: false,
   },
   compatibilityDate: "2025-03-30",
 });
