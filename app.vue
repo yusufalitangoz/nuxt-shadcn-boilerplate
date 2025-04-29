@@ -1,11 +1,9 @@
 <script setup lang="ts">
-const head = useLocaleHead({
-  key: "id",
-  seo: true,
-  dir: true,
-});
 const route = useRoute();
 const { t } = useI18n();
+const head = useLocaleHead({
+  key: "id",
+});
 
 const description = computed(() =>
   t((route.meta.description as string) ?? "nuxtSiteConfig.description"),
@@ -21,9 +19,7 @@ defineOgImageComponent("Default", {
 });
 
 useHead({
-  templateParams: {
-    siteName: siteName,
-  },
+  titleTemplate: `%s %separator ${siteName.value}`,
 });
 </script>
 
