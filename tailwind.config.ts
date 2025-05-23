@@ -2,7 +2,7 @@ import type { Config } from "tailwindcss";
 import animate from "tailwindcss-animate";
 
 export default <Partial<Config>>{
-  darkMode: ["class"],
+  darkMode: "class",
   safelist: ["dark"],
   prefix: "",
   theme: {

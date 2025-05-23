@@ -1,10 +1,11 @@
+import tailwindcss from "@tailwindcss/vite";
+
 const baseUrl = process.env.BASE_URL;
 
 export default defineNuxtConfig({
   modules: [
     "@zadigetvoltaire/nuxt-well-known",
     "pinia-plugin-persistedstate/nuxt",
-    "@nuxtjs/tailwindcss",
     "@nuxtjs/color-mode",
     "@vee-validate/nuxt",
     "@nuxtjs/fontaine",
@@ -14,13 +15,21 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@vueuse/nuxt",
     "@pinia/nuxt",
-    "shadcn-nuxt",
     "@nuxt/image",
     "@nuxt/fonts",
     "@nuxtjs/seo",
     "@nuxt/icon",
     "nuxt-svgo",
+    "shadcn-nuxt",
   ],
+  css: ["~/assets/css/tailwind.css"],
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  shadcn: {
+    prefix: "",
+    componentDir: "./components/ui",
+  },
   i18n: {
     locales: [
       {
