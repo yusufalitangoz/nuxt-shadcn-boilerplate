@@ -14,22 +14,14 @@ export default defineNuxtConfig({
     "@nuxt/eslint",
     "@nuxtjs/i18n",
     "@vueuse/nuxt",
+    "shadcn-nuxt",
     "@pinia/nuxt",
     "@nuxt/image",
     "@nuxt/fonts",
     "@nuxtjs/seo",
     "@nuxt/icon",
     "nuxt-svgo",
-    "shadcn-nuxt",
   ],
-  css: ["~/assets/css/tailwind.css"],
-  vite: {
-    plugins: [tailwindcss()],
-  },
-  shadcn: {
-    prefix: "",
-    componentDir: "./components/ui",
-  },
   i18n: {
     locales: [
       {
@@ -58,11 +50,26 @@ export default defineNuxtConfig({
     },
     devtools: true,
   },
+  css: ["~/assets/css/tailwind.css"],
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  shadcn: {
+    prefix: "",
+    componentDir: "./components/ui",
+  },
+  robots: {
+    blockNonSeoBots: true,
+    blockAiBots: true,
+  },
   svgo: {
     autoImportPath: false,
   },
   security: {
     rateLimiter: false,
+  },
+  sitemap: {
+    autoLastmod: true,
   },
   imports: {
     dirs: ["types"],
@@ -76,5 +83,6 @@ export default defineNuxtConfig({
   devtools: {
     enabled: true,
   },
+
   compatibilityDate: "2025-03-30",
 });
