@@ -60,7 +60,6 @@ export default defineNuxtConfig({
   },
   robots: {
     blockNonSeoBots: true,
-    blockAiBots: true,
   },
   svgo: {
     autoImportPath: false,
