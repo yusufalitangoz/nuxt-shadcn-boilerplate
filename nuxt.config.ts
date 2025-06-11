@@ -1,7 +1,6 @@
 import tailwindcss from "@tailwindcss/vite";
 
 const baseUrl = process.env.BASE_URL;
-const date = "2025-06-11";
 
 export default defineNuxtConfig({
   modules: [
@@ -44,7 +43,7 @@ export default defineNuxtConfig({
   wellKnown: {
     securityTxt: {
       canonical: [`${baseUrl}/.well-known/security.txt`],
-      expires: new Date(date).toISOString(),
+      expires: new Date("2026-06-11").toISOString(),
       contacts: ["mailto:you@domain.com"],
       preferredLanguages: ["tr", "en"],
       disabled: false,
@@ -52,7 +51,7 @@ export default defineNuxtConfig({
     devtools: true,
   },
   css: ["~/assets/css/tailwind.css"],
-  compatibilityDate: date,
+  compatibilityDate: "2025-06-11",
   vite: {
     plugins: [tailwindcss()],
   },
