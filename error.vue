@@ -17,8 +17,8 @@ useHead({
         {{ $t("error.button") }}
       </NuxtLinkLocale>
     </Button>
+    <DevOnly>
+      {{ error }}
+    </DevOnly>
   </main>
-  <DevOnly>
-    {{ error }}
-  </DevOnly>
 </template>
