@@ -56,14 +56,20 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   shadcn: {
-    prefix: "",
     componentDir: "./components/ui",
+    prefix: "",
+  },
+  security: {
+    rateLimiter: {
+      tokensPerInterval: 200,
+      interval: 10000,
+    },
   },
   svgo: {
     autoImportPath: false,
   },
-  security: {
-    rateLimiter: false,
+  robots: {
+    blockNonSeoBots: true,
   },
   sitemap: {
     autoLastmod: true,
@@ -71,6 +77,7 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["types"],
   },
+
   typescript: {
     typeCheck: true,
   },
