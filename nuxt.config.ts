@@ -77,7 +77,6 @@ export default defineNuxtConfig({
   imports: {
     dirs: ["types"],
   },
-
   typescript: {
     typeCheck: true,
   },
