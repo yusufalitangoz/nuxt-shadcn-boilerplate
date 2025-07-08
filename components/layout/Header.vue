@@ -9,12 +9,7 @@ const { locale, locales } = useI18n();
 const colorMode = useColorMode();
 
 const availableLocales = computed<LocaleObject[]>(() =>
-  locales.value
-    .filter(({ code }) => code !== locale.value)
-    .map((locale) => ({
-      ...locale,
-      code: switchLocalePath(locale.code) as "tr" | "en",
-    })),
+  locales.value.filter(({ code }) => code !== locale.value),
 );
 
 const colorModeIcons = new Map<string, string>([
@@ -84,7 +79,7 @@ const colorModeIcons = new Map<string, string>([
               :key="code"
               as-child
             >
-              <NuxtLink :to="code">
+              <NuxtLink :to="switchLocalePath(code)">
                 {{ name }}
               </NuxtLink>
             </DropdownMenuItem>
