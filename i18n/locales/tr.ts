@@ -25,7 +25,4 @@ export default {
       name: "Sosyal Medya",
     },
   ],
-  footer: {
-    description: "Bu bir footer açıklamasıdır",
-  },
 };

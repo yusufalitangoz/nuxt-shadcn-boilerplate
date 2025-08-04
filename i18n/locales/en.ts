@@ -25,7 +25,4 @@ export default {
       name: "Social Media",
     },
   ],
-  footer: {
-    description: "This is a footer description",
-  },
 };

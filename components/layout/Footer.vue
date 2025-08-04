@@ -6,13 +6,10 @@ const { social, general } = storeToRefs(useLinkGroupsStore());
 
 <template>
   <footer class="border-t w-full text-sm">
-    <nav class="container py-10 grid md:grid-cols-2 items-start gap-10">
-      <div class="grid place-items-start gap-3">
+    <nav class="container pt-10 pb-7 grid md:grid-cols-2 items-start gap-10">
+      <div class="grid place-items-start gap-3 h-full">
         <LayoutLogo />
-        <p class="text-muted-foreground">
-          {{ $t("footer.description") }}
-        </p>
-        <div class="flex flex-wrap gap-2">
+        <div class="flex flex-wrap gap-2 mt-auto">
           <Button
             v-for="{ name, icon, to } in social.links"
             :key="icon"
@@ -45,6 +42,11 @@ const { social, general } = storeToRefs(useLinkGroupsStore());
           </NavigationMenu>
         </div>
       </div>
+      <span
+        class="text-center md:col-span-2 text-muted-foreground border-t pt-7"
+      >
+        © {{ new Date().getFullYear() }}
+      </span>
     </nav>
   </footer>
 </template>
