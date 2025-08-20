@@ -39,6 +39,9 @@ export default defineNuxtConfig({
     ],
     defaultLocale: "tr",
     baseUrl,
+    bundle: {
+      optimizeTranslationDirective: false,
+    },
   },
   wellKnown: {
     securityTxt: {
