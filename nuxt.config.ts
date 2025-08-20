@@ -4,6 +4,7 @@ const baseUrl = process.env.BASE_URL;
 
 export default defineNuxtConfig({
   modules: [
+    "@pinia/nuxt",
     "@zadigetvoltaire/nuxt-well-known",
     "pinia-plugin-persistedstate/nuxt",
     "@nuxtjs/color-mode",
@@ -15,7 +16,6 @@ export default defineNuxtConfig({
     "@nuxtjs/i18n",
     "@vueuse/nuxt",
     "shadcn-nuxt",
-    "@pinia/nuxt",
     "@nuxt/image",
     "@nuxt/fonts",
     "@nuxtjs/seo",
