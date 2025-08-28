@@ -20,11 +20,16 @@ const colorModeIcons = new Map<string, string>([
 </script>
 
 <template>
-  <DefineNavigationMenu>
+  <DefineNavigationMenu v-slot="{ withSheetClose }">
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem v-for="{ name, to } in general.links" :key="to">
-          <NuxtLink :class="navigationMenuTriggerStyle()" :to="to">
+          <SheetClose v-if="withSheetClose">
+            <NuxtLink :class="navigationMenuTriggerStyle()" :to="to">
+              {{ name }}
+            </NuxtLink>
+          </SheetClose>
+          <NuxtLink v-else :class="navigationMenuTriggerStyle()" :to="to">
             {{ name }}
           </NuxtLink>
         </NavigationMenuItem>
@@ -92,7 +97,10 @@ const colorModeIcons = new Map<string, string>([
             </Button>
           </SheetTrigger>
           <SheetContent>
-            <ReuseNavigationMenu class="[&_ul]:flex-col [&_ul]:items-start" />
+            <ReuseNavigationMenu
+              class="[&_ul]:flex-col [&_ul]:items-start"
+              :with-sheet-close="true"
+            />
           </SheetContent>
         </Sheet>
       </div>
