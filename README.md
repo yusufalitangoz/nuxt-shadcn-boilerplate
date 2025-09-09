@@ -1,1 +1,1 @@
-# nuxt-shadcn-boilerplate
+# nuxt-4-shadcn-boilerplate
