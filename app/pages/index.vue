@@ -42,7 +42,7 @@ const onSubmit = handleSubmit(async (values) => {
       <div class="flex flex-wrap justify-center gap-3 my-10">
         <Button as-child>
           <NuxtLink target="_blank" to="https://nuxt.com">
-            <Icon name="logos:nuxt-icon" class="mr-2" />
+            <Icon name="logos:nuxt-icon" />
             Nuxt
           </NuxtLink>
         </Button>
@@ -57,7 +57,7 @@ const onSubmit = handleSubmit(async (values) => {
             to="https://github.com/yusufalitangoz/nuxt-shadcn-boilerplate"
             target="_blank"
           >
-            <Icon name="simple-icons:github" class="mr-2" size="18" />
+            <Icon name="simple-icons:github" size="18" />
             GitHub
           </NuxtLink>
         </Button>
