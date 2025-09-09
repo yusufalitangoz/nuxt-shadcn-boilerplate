@@ -39,9 +39,6 @@ export default defineNuxtConfig({
     ],
     defaultLocale: "tr",
     baseUrl,
-    bundle: {
-      optimizeTranslationDirective: false,
-    },
   },
   wellKnown: {
     securityTxt: {
@@ -59,7 +56,7 @@ export default defineNuxtConfig({
     plugins: [tailwindcss()],
   },
   shadcn: {
-    componentDir: "./components/ui",
+    componentDir: "./app/components/ui",
     prefix: "",
   },
   security: {

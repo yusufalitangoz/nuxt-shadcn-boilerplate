@@ -1,7 +1,7 @@
 export default {
   nuxtSiteConfig: {
-    name: "Nuxt + Shadcn Boilerplate",
-    description: "A Nuxt boilerplate with Shadcn",
+    name: "Nuxt 4 + Shadcn Boilerplate",
+    description: "A Nuxt 4 boilerplate with Shadcn",
   },
   meta: {
     home: {
